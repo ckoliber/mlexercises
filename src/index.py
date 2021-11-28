@@ -1,5 +1,5 @@
-import numpy
-import matplotlib
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 def generate_newton_polynomial(features, degree):
@@ -7,17 +7,21 @@ def generate_newton_polynomial(features, degree):
 
 
 def generate_polynomial_features(features, degree):
-    result = numpy.array()
+    result = np.array()
 
     for i in range(0, degree):
         newton_polynomial = generate_newton_polynomial(features, i)
-        numpy.append(result, newton_polynomial)
+        np.append(result, newton_polynomial)
 
     return result
 
 
 def main():
-    data = numpy.load("./lib/data.npz")
+    data = np.load("./lib/data.npz")
+
+    fig = plt.figure()
+    ax = plt.axes(projection="3d")
+    plt.show()
 
     x1 = data["x1"]
     x2 = data["x2"]
