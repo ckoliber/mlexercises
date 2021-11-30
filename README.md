@@ -14,7 +14,7 @@ poetry install
 
 ```bash
 # Start application
-poetry run start
+poetry run jupyter notebook
 ```
 
 ## Contributing
