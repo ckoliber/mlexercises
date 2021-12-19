@@ -5,11 +5,12 @@ description = ""
 authors = ["KoLiBer <koliberr136a1@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "3.10"
+python = "3.8"
 jupyter = "^1.0.0"
 ipykernel = "^6.5.1"
 numpy = "^1.21.4"
 matplotlib = "^3.5.0"
+tensorflow = "^2.7.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
