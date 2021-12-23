@@ -12,6 +12,7 @@ numpy = "^1.21.4"
 matplotlib = "^3.5.0"
 scikit-learn = "^1.0.1"
 xgboost = "^1.5.1"
+scipy = "^1.7.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
